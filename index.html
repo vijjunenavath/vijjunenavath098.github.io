@@ -29,7 +29,7 @@
     <section id="about" class="max-w-5xl mx-auto px-4 py-12 md:py-20">
         <div class="border border-slate-800 bg-slate-950/40 rounded-2xl p-8 md:p-12 shadow-xl">
             <div class="flex flex-col md:flex-row items-center gap-8 mb-6">
-                <!-- Headshot Placeholder: upload a 'profile.jpg' to your repo to display -->
+                <!-- Headshot Container (Displays standard avatar fallback if profile.jpg is missing) -->
                 <div class="flex-shrink-0">
                     <img src="profile.jpg" alt="Vijay Naik Nenavath" onerror="this.src='https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=160&h=160&q=80'" class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-cyan-500 object-cover shadow-lg shadow-cyan-500/10">
                 </div>
@@ -53,17 +53,17 @@
             </div>
             
             <!-- Contact Links & Action Buttons -->
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 mt-6 pt-6 border-t border-slate-800/60布">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 mt-6 pt-6 border-t border-slate-800/60">
                 <div class="flex flex-wrap gap-4 text-sm text-slate-300">
                     <span class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-cyan-500"></i> Bristol, UK (Ready to relocate)</span>
                     <a href="mailto:vijjunenavath098@gmail.com" class="flex items-center gap-2 hover:text-cyan-400 transition"><i class="fa-solid fa-envelope text-cyan-500"></i> vijjunenavath098@gmail.com</a>
-                    <a href="https://github.com/vijjunenavath" target="_blank" class="flex items-center gap-2 hover:text-cyan-400 transition"><i class="fa-brands fa-github text-cyan-500"></i> GitHub</a>
+                    <a href="https://github.com/vijjunenavath098" target="_blank" class="flex items-center gap-2 hover:text-cyan-400 transition"><i class="fa-brands fa-github text-cyan-500"></i> GitHub</a>
                 </div>
                 <div class="flex flex-wrap gap-3">
                     <a href="https://linkedin.com/in/vijaynaiknenavath" target="_blank" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-lg flex items-center gap-2 transition">
                         <i class="fa-brands fa-linkedin"></i> LinkedIn Profile
                     </a>
-                    <!-- PDF Download Link: upload a 'VijayNaik - CV.pdf' to your repository to activate -->
+                    <!-- Pointing exactly to your uploaded file name 'VijayNaik - CV.pdf' -->
                     <a href="VijayNaik - CV.pdf" target="_blank" class="px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-black text-sm font-bold rounded-lg flex items-center gap-2 transition">
                         <i class="fa-solid fa-file-arrow-down"></i> Download CV (PDF)
                     </a>
@@ -98,8 +98,67 @@
         <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
             <span class="h-1 w-6 bg-cyan-500 rounded"></span> Verified Technical Projects
         </h3>
-        <div class="space-y-6">
-            <!-- Project 1 -->
+        <div class="space-y-8">
+            
+            <!-- MASTER EXPANDED GRC PROJECT WITH GOOGLE DRIVE VIDEO LINK -->
+            <div class="bg-slate-950/60 border-2 border-cyan-500/30 p-6 md:p-8 rounded-2xl shadow-2xl">
+                <div class="flex justify-between items-start flex-wrap gap-4 mb-4">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-cyan-400 bg-cyan-950/60 border border-cyan-800/40 px-2.5 py-1 rounded-md">UWE Boardroom Simulation</span>
+                        <h4 class="text-xl md:text-2xl font-bold text-slate-100 mt-2">ISO 27001:2022 ISMS Risk Architecture — NorthStar Retail Ltd</h4>
+                    </div>
+                    <span class="text-xs text-slate-400 font-mono bg-slate-900 border border-slate-800 px-3 py-1 rounded-md">Duration: 15 mins</span>
+                </div>
+                
+                <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                    Architected a comprehensive, sanitized ISO/IEC 27001:2022 Information Security Management System (ISMS) for a mid-sized UK retailer handling omnichannel operations. This project evaluates risk landscapes against real-world attack models, mapping business infrastructure to precise Annex A security controls, UK GDPR, and PCI DSS baselines.
+                </p>
+
+                <!-- Streaming Button linking directly to your verified Google Drive video upload -->
+                <div class="mb-6 p-6 rounded-xl border border-slate-800 bg-slate-900/40 text-center max-w-3xl mx-auto">
+                    <i class="fa-solid fa-video text-cyan-400 text-3xl mb-2 animate-pulse"></i>
+                    <h5 class="font-bold text-base text-slate-200 mb-1">ISO 27001 Boardroom Presentation Stream</h5>
+                    <p class="text-xs text-slate-400 max-w-md mx-auto mb-4">
+                        Watch our full consulting panel presentation mapping risk matrices and security architectures directly to executive business stakeholders.
+                    </p>
+                    <a href="https://drive.google.com/file/d/1Kw-OoCRyu8ceBPTvqbTqZ3qr3gjEiAtn/view?usp=sharing" 
+                       target="_blank" 
+                       class="inline-flex items-center gap-2 px-5 py-2.5 bg-cyan-500 hover:bg-cyan-600 text-black font-bold text-sm rounded-lg shadow-lg shadow-cyan-500/10 transition transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-play"></i> Launch Presentation Recording (15 Mins)
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-slate-900/50 border border-slate-800/50 p-4 rounded-xl mb-6 text-sm">
+                    <div>
+                        <h5 class="font-bold text-cyan-400 mb-1"><i class="fa-solid fa-layer-group"></i> Repository Artifacts</h5>
+                        <ul class="list-disc pl-5 text-xs text-slate-400 space-y-1">
+                            <li><strong>NorthStar_RR.xlsx:</strong> 5x5 Matrix quantifying 12 critical risks.</li>
+                            <li><strong>NorthStar_SOA.xlsx:</strong> Justification logs for 93 Annex A controls.</li>
+                            <li><strong>Northstar_ISMS.xlsx:</strong> Master implementation blueprint tracking matrices.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-cyan-400 mb-1"><i class="fa-solid fa-people-group"></i> Consulting Group Composition</h5>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Collaborative defense architecture engineered by: Joshua Redfern, Lucas Dawson, and Vijay Naik Nenavath. Managed under academic supervision at UWE Bristol.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-3 items-center justify-between border-t border-slate-800 pt-4">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs bg-slate-800 text-slate-300 px-2 py-0.5 rounded">ISO 27001:2022</span>
+                        <span class="text-xs bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Risk Architecture</span>
+                        <span class="text-xs bg-slate-800 text-slate-300 px-2 py-0.5 rounded">UK GDPR / PCI DSS</span>
+                    </div>
+                    <!-- Points straight to your main repository root file structure -->
+                    <a href="https://github.com/vijjunenavath098/vijjunenavath098.github.io" target="_blank" class="text-sm font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
+                        Browse Audit Templates & Slides on GitHub <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
             <div class="bg-slate-950/40 border border-slate-800 p-6 rounded-xl hover:border-slate-700 transition flex flex-col justify-between">
                 <div>
                     <div class="flex justify-between items-start flex-wrap gap-2 mb-2">
@@ -114,29 +173,8 @@
                     </div>
                 </div>
                 <div class="border-t border-slate-800/80 pt-3 mt-2">
-                    <a href="https://github.com/vijjunenavath/microsoft-sentinel-soc-lab" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1 transition">
+                    <a href="https://github.com/vijjunenavath098/vijjunenavath098.github.io" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1 transition">
                         View Project Repository on GitHub <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="bg-slate-950/40 border border-slate-800 p-6 rounded-xl hover:border-slate-700 transition flex flex-col justify-between">
-                <div>
-                    <div class="flex justify-between items-start flex-wrap gap-2 mb-2">
-                        <h4 class="text-lg font-bold text-slate-100">ISO 27001:2022 ISMS Risk Architecture — NorthStar Retail Ltd</h4>
-                        <span class="text-xs text-cyan-400 font-mono bg-cyan-950/40 px-2 py-1 rounded">2026</span>
-                    </div>
-                    <p class="text-sm text-slate-400 mb-4">Architected a comprehensive, sanitized ISO 27001:2022-aligned Information Security Management System (ISMS) framework. Generated a full Statement of Applicability (SoA), defined a quantified 5x5 matrix risk evaluation register detailing 12 core asset risks, and compiled explicit audit control trails mapped directly to GDPR and UK Cyber Essentials requirements.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="text-xs bg-slate-800 text-slate-300 px-2 py-0.5 rounded">GRC Audit</span>
-                        <span class="text-xs bg-slate-800 text-slate-300 px-2 py-0.5 rounded">ISO 27001 Framework</span>
-                        <span class="text-xs bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Risk Quantification</span>
-                    </div>
-                </div>
-                <div class="border-t border-slate-800/80 pt-3 mt-2">
-                    <a href="https://github.com/vijjunenavath/iso27001-isms-framework" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1 transition">
-                        View Audit Templates on GitHub <i class="fa-solid fa-arrow-right text-[10px]"></i>
                     </a>
                 </div>
             </div>
@@ -156,32 +194,12 @@
                     </div>
                 </div>
                 <div class="border-t border-slate-800/80 pt-3 mt-2">
-                    <a href="https://github.com/vijjunenavath/flask-nginx-hardening" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1 transition">
+                    <a href="https://github.com/vijjunenavath098/vijjunenavath098.github.io" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1 transition">
                         View Codebase Hardening on GitHub <i class="fa-solid fa-arrow-right text-[10px]"></i>
                     </a>
                 </div>
             </div>
 
-            <!-- Project 4 -->
-            <div class="bg-slate-950/40 border border-slate-800 p-6 rounded-xl hover:border-slate-700 transition flex flex-col justify-between">
-                <div>
-                    <div class="flex justify-between items-start flex-wrap gap-2 mb-2">
-                        <h4 class="text-lg font-bold text-slate-100">Automated Security Logging & Event Enrichment Scripts</h4>
-                        <span class="text-xs text-cyan-400 font-mono bg-cyan-950/40 px-2 py-1 rounded">2024 - 2025</span>
-                    </div>
-                    <p class="text-sm text-slate-400 mb-4">Engineered defensive Python automation models for raw log file ingestion, regex parsing pattern isolation, and threat-intel parsing enrichment. Constructed PowerShell modules configured to interrogate active Windows Event logs, isolating anomalous execution trees and mapping malicious vectors.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="text-xs bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Python Security</span>
-                        <span class="text-xs bg-slate-800 text-slate-300 px-2 py-0.5 rounded">PowerShell Modules</span>
-                        <span class="text-xs bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Log Automation</span>
-                    </div>
-                </div>
-                <div class="border-t border-slate-800/80 pt-3 mt-2">
-                    <a href="https://github.com/vijjunenavath/security-scripting-log-analysis" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1 transition">
-                        View Automation Scripts on GitHub <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                    </a>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -228,7 +246,6 @@
             <span class="h-1 w-6 bg-cyan-500 rounded"></span> Technical Cyber Security Labs
         </h3>
         <div class="space-y-8 border-l-2 border-slate-800 pl-6 ml-2">
-            <!-- Experience Block 1 -->
             <div class="relative">
                 <div class="absolute -left-[31px] top-1 bg-slate-900 border-2 border-cyan-500 w-4 h-4 rounded-full"></div>
                 <div class="flex justify-between items-start flex-wrap gap-2 mb-1">
@@ -243,7 +260,6 @@
                 </ul>
             </div>
 
-            <!-- Experience Block 2 -->
             <div class="relative">
                 <div class="absolute -left-[31px] top-1 bg-slate-900 border-2 border-slate-700 w-4 h-4 rounded-full"></div>
                 <div class="flex justify-between items-start flex-wrap gap-2 mb-1">
